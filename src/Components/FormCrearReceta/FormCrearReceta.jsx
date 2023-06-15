@@ -81,7 +81,7 @@ export default function FormCrearReceta() {
         stepByStep: pasos,
         diets: selectedDiets
       }
-      await axios.post('http://localhost:3001/recipes',datos)
+      await axios.post('/recipes',datos)
         alert('Receta creada')
         setReceta({ name: "",
         summary: "",
