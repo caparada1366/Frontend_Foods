@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { useDispatch } from 'react-redux';
 import { searchRecipe, borrarBusqueda } from '../../Redux/actions';
-
+import './NavBar.css'
 
 export default function SearchBar() {
    const dispatch = useDispatch();
@@ -27,7 +27,7 @@ export default function SearchBar() {
   }
 
   return (
-    <div>
+    <div className='searchbar'>
         <input onChange={handleChange} onKeyDown={handlePressEnter} value={receta}></input>
         <button onClick={handleClickSearch}>Buscar Receta</button>
         <button onClick={handleClickBorrar}>Borrar busqueda</button>

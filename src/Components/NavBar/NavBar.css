@@ -1,10 +1,12 @@
 .navbar {
-    background-color: rgb(216, 205, 255); /* Cambia el color de fondo a tu gusto */
+    background-color: rgb(119, 119, 119); /* Cambia el color de fondo a tu gusto */
     overflow: hidden; /* Evita que los elementos floten fuera de la barra de navegación */
-    border: 1px solid black;
+
     display: flex;
     justify-content: space-evenly;
-    
+    height: 25px;
+    padding-top: 8px;
+    padding-bottom: 5px;
     
   }
 
@@ -20,11 +22,24 @@
     font-style: italic;
     font-family: 'Lucida Sans Regular';
     border-radius: 20%;
-    
+    background-color: #5B5B5B;
+    color: rgb(240, 248, 255);
   }
 
   .navbar button:hover {
-    background-color: #ddd;
+    background-color: rgb(240, 248, 255);
     color: black;
     cursor: pointer;
   }
+  .searchbar{
+    overflow: hidden;
+    padding-left: 5px;
+  }
+
+  .searchbar input,
+.searchbar button {
+  margin-left: 15px; /* Ajusta este valor según sea necesario */
+ 
+    font-family: 'Lucida Sans Regular';
+}
+

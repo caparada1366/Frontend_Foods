@@ -13,6 +13,13 @@
     
 }
 
+.cards h2,
+.cards h3,
+.cards h4{
+    text-decoration: none;
+    color: black;
+}
+
 .cards:hover {
     transform: scale(1.03);
 }

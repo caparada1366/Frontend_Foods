@@ -1,33 +1,36 @@
 
+.containerFull{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   text-decoration: none;
+   height: 100vh;
+}
  .container{
+   padding-top: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-    height: 160vh;
+    text-decoration: none;
  }
- .containteFull{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 100vh;
- }
+
  
  .filtros{
     display: block;
     width: 15vw;
-    height: 160vh;
-    align-self: auto;
+    height: 180vh;
+   
+    
  }
  .card_container{
-    border: 2px solid rgba(0, 0, 255, 0.137); 
+
     display: flex;
     flex-wrap: wrap; 
     padding: 1%;
     justify-content: space-between;
     width: 85vw;
-    align-self: flex-start;
+    text-decoration: none;
+
  }
  .paginado{
    align-self: center;

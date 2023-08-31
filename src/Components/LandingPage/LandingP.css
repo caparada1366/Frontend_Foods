@@ -1,11 +1,12 @@
 .landingP{
-  background-image: url('https://scontent.fbog7-1.fna.fbcdn.net/v/t1.6435-9/67822583_1227451690749555_629735264650002432_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=UBtnRzws1qwAX_KjKMa&_nc_ht=scontent.fbog7-1.fna&oh=00_AfAApNiQ3iuhhKQlvGsXFF7Lcj7ivQSmw4lftUZJwutyEQ&oe=6497317E');
-  width: 100%;
-  height: 100vh;
+  width: auto;
+  height: auto;
   background-size: cover;
   background-position: center;
+  height: 100vh;
 }
 .header{
+  padding-top: 20px;
   display: flex;
   align-items: center;
   color: black;
@@ -14,6 +15,7 @@
 }
 
 .container {
+    padding-top: 30px;
     display: flex;
     justify-content: space-between;
     
@@ -22,6 +24,7 @@
 
   .left-div, .right-div {
     width: 45%; 
-    height: 2vh;
+    
     padding: 20px; 
+    
   }

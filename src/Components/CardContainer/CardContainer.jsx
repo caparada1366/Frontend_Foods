@@ -20,22 +20,21 @@ export default function CardContainer() {
 
 
   return (
-    <div>
-      <div className='containerFull'>
+    <div className='containterFull'>
         <div className='container'>
-          <div className='card_container'>
-            {
-              recipesPages && recipesPages.map((recipe)=>{
-                return <Cards
-                id={recipe.id}
-                image = {recipe.image}
-                name = {recipe.name}
-                diets = {recipe.diets}
-                healthScore = {recipe.health_Score}>
-                </Cards>
-              })
-              } 
-          </div>
+            <div className='card_container'>
+              {
+                recipesPages && recipesPages.map((recipe)=>{
+                  return <Cards
+                  id={recipe.id}
+                  image = {recipe.image}
+                  name = {recipe.name}
+                  diets = {recipe.diets}
+                  healthScore = {recipe.health_Score}>
+                  </Cards>
+                })
+                } 
+            </div>
           <div className='filtros'>
             <Filtros></Filtros>
           </div>
@@ -45,7 +44,5 @@ export default function CardContainer() {
           <Paginado cantPages={cantPages}/>
         </div>
       </div>
-      
-    </div>
   )
 }

@@ -9,7 +9,6 @@ export default function NavBar() {
         <Link to='/home'><button>Home</button></Link>
         <SearchBar></SearchBar>
         <Link to='/form'><button>Crear receta</button></Link>
-     
     </div>
   )
 }

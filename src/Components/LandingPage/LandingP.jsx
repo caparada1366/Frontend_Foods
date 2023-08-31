@@ -25,7 +25,7 @@ export default function LandingP({onClick}) {
     <div className='landingP'>
       <div className='header'>
         <h1>HENRY FOODS</h1>
-        <img src={cooking} style={{width: '50px', height: '50px'}} alt="cook"/>
+        <img src={cooking} style={{width: '50px', height: '50px', paddingLeft: '20px'}} alt="cook"/>
       </div>
       <div className='container'>
         <div className='left-div'>
@@ -46,7 +46,7 @@ export default function LandingP({onClick}) {
           <h5>Haz click en la hamburguesa para entrar</h5>
         </div>
         <div className='right-div'>
-            <img src={Dinner} alt='Food' style={{width: '40vw', height: 'auto'}} ></img>
+            <img src={Dinner} alt='Food' style={{width: '40vw', paddingTop: '30px'}} ></img>
         </div>
       </div>
     </div>
