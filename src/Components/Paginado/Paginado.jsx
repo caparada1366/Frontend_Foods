@@ -25,7 +25,7 @@ export default function Paginado({cantPages}) {
       <div className='paginado'>
           {pagActual > 1 ? (
           <div>
-            <button className='item' onClick={prevP}>PREV</button>
+            <a className='item' onClick={prevP}>PREV</a>
             {pagActual>2 ?(
                <a className='item' onClick={()=>irPag(pagActual-2)}>  {pagActual -2}  </a>
             ):null}
@@ -43,7 +43,7 @@ export default function Paginado({cantPages}) {
             {pagActual< cantPages-1 ?(
                <a  className='item'onClick={()=>irPag(pagActual+2)}>  {pagActual +2}  </a>
             ):null}
-            <button className='item' onClick={nextP}>NEXT</button>
+            <a className='item' onClick={nextP}>NEXT</a>
             </div>
           </div>
         ) : null}

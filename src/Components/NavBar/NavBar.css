@@ -1,13 +1,11 @@
 .navbar {
     background-color: rgba(119, 119, 119, 0.644); /* Cambia el color de fondo a tu gusto */
-    overflow: hidden; /* Evita que los elementos floten fuera de la barra de navegación */
-
     display: flex;
-    
     align-items: center;
     height: 25px;
     padding-top: 8px;
     padding-bottom: 5px;
+    border-radius: 10%;
     
   }
 
@@ -49,3 +47,36 @@
     font-family: 'Lucida Sans Regular';
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+/* Mostrar el menú desplegable cuando se activa */
+.dropdown:hover .dropdown-content {
+  display: block;
+}

@@ -3,13 +3,15 @@
    gap: 10px;
    font-size: large;
    justify-content: center;
-   background-color: #5B5B5B;
+   background-color: rgba(119, 119, 119, 0.644);
    font-weight: bolder;
 
 }
 
 .paginado a{
     cursor: pointer;
+    font-style: italic;
+    font-family: 'Lucida Sans Regular';
 }
 
 

@@ -34,11 +34,7 @@ export default function CardContainer() {
                   </Cards>
                 })
                 } 
-            </div>
-          <div className='filtros'>
-            <Filtros></Filtros>
-          </div>
-          
+            </div>       
         </div>    
         <div className='paginado'>
           <Paginado cantPages={cantPages}/>

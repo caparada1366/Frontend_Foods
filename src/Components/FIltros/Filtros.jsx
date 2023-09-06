@@ -49,8 +49,7 @@ export default function Filtros() {
 
   return (
     <div className='filtros'>
-      <br></br>
-      <br></br>
+
       <br></br>
       <br></br>
         <div>
@@ -90,10 +89,10 @@ export default function Filtros() {
                       return <label> <input type='checkbox' name={d.name} checked={selectedDiets.includes(d.name)} onChange={handleDietsChange}/>{d.name}</label>
                   })}   
              <br></br>
-            <button onClick={handleFilterDiets}style={{marginLeft: '20px', marginTop: '10px', marginBottom: '10px' }}>Filtrar por dietas</button>
+            <button onClick={handleFilterDiets}style={{marginTop: '10px', marginBottom: '10px' }}>Aplicar filtros</button>
             </div>
-        <div style={{alignSelf: 'center', paddingBottom: '200px', paddingRight: '20px', }}>
-        <button onClick={handleQuitarFiltros} style={{marginTop: '30px'}}>Quitar filtros</button>
+        <div style={{alignSelf: 'center', paddingRight: '20px', }}>
+        <button onClick={handleQuitarFiltros} style={{marginTop: '10px'}}>Quitar filtros</button>
         </div>        
         </div>   
         
