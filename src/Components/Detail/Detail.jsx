@@ -14,12 +14,9 @@ export default function Detail() {
   useEffect(()=>{
     setTimeout(()=> {setLoading(false)},2500)
     axios.get(`/recipes/${id}`).then(({data})=>{
-      if(data){
         setReceta(data)
-      } else{
-        window.alert(`No hay recetas con el id ${id}`)
-      }
-    }).catch(err => alert(err.toString()))
+  
+    }).catch(err => alert('Se han agotado los request a la api, intente mañana nuevamente'))
   },[])
 
   function limpiarSummary(){
