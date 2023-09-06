@@ -34,7 +34,7 @@ export default function Paginado({cantPages}) {
           </div>
         ) : null}
         <div>
-        <a className='item' style={{color: 'red'}} onClick={()=>irPag(pagActual)}>  {pagActual}  </a>
+        <a className='item' style={{color: 'rgb(240, 248, 255)'}} onClick={()=>irPag(pagActual)}>  {pagActual}  </a>
         </div>
         {pagActual < cantPages ? (
           <div>

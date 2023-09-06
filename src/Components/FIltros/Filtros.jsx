@@ -49,6 +49,10 @@ export default function Filtros() {
 
   return (
     <div className='filtros'>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
         <div>
         <label for='OrdAZ' style={{alignSelf: 'center'}}>Orden Alfabético</label>
         <div>
@@ -80,18 +84,16 @@ export default function Filtros() {
         </div>
         </div>
         <div>
-            
-             
               <div className='contenedorDietas'>
               <label for='filDiets'>Filtrar por dietas: </label>   
                   {diets && diets.map((d)=>{
                       return <label> <input type='checkbox' name={d.name} checked={selectedDiets.includes(d.name)} onChange={handleDietsChange}/>{d.name}</label>
                   })}   
-             
-            <button onClick={handleFilterDiets}style={{marginLeft: '55px', marginTop: '10px', marginBottom: '10px' }}>Filtrar por dietas</button>
+             <br></br>
+            <button onClick={handleFilterDiets}style={{marginLeft: '20px', marginTop: '10px', marginBottom: '10px' }}>Filtrar por dietas</button>
             </div>
         <div style={{alignSelf: 'center', paddingBottom: '200px', paddingRight: '20px', }}>
-        <button onClick={handleQuitarFiltros} style={{fontWeight: 'bolder', marginTop: '30px'}}>Quitar filtros</button>
+        <button onClick={handleQuitarFiltros} style={{marginTop: '30px'}}>Quitar filtros</button>
         </div>        
         </div>   
         

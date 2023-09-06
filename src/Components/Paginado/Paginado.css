@@ -1,9 +1,11 @@
 .paginado{
    display: flex;
-   font-size: larger;
+   gap: 10px;
+   font-size: large;
    justify-content: center;
-   background-color: rgb(216, 205, 255);
+   background-color: #5B5B5B;
    font-weight: bolder;
+
 }
 
 .paginado a{
@@ -18,5 +20,5 @@
     cursor: pointer;
  }
 .paginado a:hover{
-    color: blue;
+    color: rgb(175, 175, 175);
 }

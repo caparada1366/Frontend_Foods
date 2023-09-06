@@ -1,9 +1,10 @@
 .navbar {
-    background-color: rgb(119, 119, 119); /* Cambia el color de fondo a tu gusto */
+    background-color: rgba(119, 119, 119, 0.644); /* Cambia el color de fondo a tu gusto */
     overflow: hidden; /* Evita que los elementos floten fuera de la barra de navegación */
 
     display: flex;
-    justify-content: space-evenly;
+    
+    align-items: center;
     height: 25px;
     padding-top: 8px;
     padding-bottom: 5px;
@@ -11,12 +12,12 @@
   }
 
   .navbar a {
-    float: left;
+    font-style: italic;
+    font-family: 'Lucida Sans Regular';
+    
+    color: rgb(240, 248, 255);
   }
 
-  .navbar searchBar {
-    align-items: center;
-  }
 
   .navbar button {
     font-style: italic;
@@ -26,18 +27,23 @@
     color: rgb(240, 248, 255);
   }
 
-  .navbar button:hover {
-    background-color: rgb(240, 248, 255);
-    color: black;
+  .navbar a:hover {
+   
+    color: rgb(36, 36, 36);
     cursor: pointer;
   }
   .searchbar{
     overflow: hidden;
-    padding-left: 5px;
+    padding-left: 120px;
+  }
+  ::placeholder{
+    color: rgba(107, 105, 105, 0.322); /* Cambia el color del texto del marcador de posición */
+    font-style: italic; /* Aplica estilo cursiva al texto del marcador de posición */
+    font-size: 14px; 
   }
 
   .searchbar input,
-.searchbar button {
+.searchbar a {
   margin-left: 15px; /* Ajusta este valor según sea necesario */
  
     font-family: 'Lucida Sans Regular';

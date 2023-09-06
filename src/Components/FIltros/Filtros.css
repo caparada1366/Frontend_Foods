@@ -36,12 +36,17 @@
     cursor: pointer;
 }
 
-.contenedorDietas{
+.contenedorDietas {
     display: grid;
-    border: 1px solid black;
-    
-   
-}
+    justify-items: left; /* Centra horizontalmente los elementos */
+    padding-top: 5px;
+    padding-left: 25px;
+  }
+
+.contenedorDietas label:first-child {
+    justify-self: center; /* Alinea el primer label a la izquierda */
+} 
+
 
 .filtros select{
     height: 20px;

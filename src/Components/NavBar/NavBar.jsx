@@ -6,9 +6,12 @@ import { Link } from 'react-router-dom'
 export default function NavBar() {
   return (
     <div className='navbar'>
-        <Link to='/home'><button>Home</button></Link>
+        <div>
+        <Link to='/home' style={{textDecoration: 'none', paddingLeft: '70px', justifySelf: 'self-start'}}><a>Home</a></Link>
+        <Link to='/form' style={{textDecoration: 'none', paddingLeft: '70px', justifySelf: 'self-start'}}><a>Crear receta</a></Link>
+        </div>
         <SearchBar></SearchBar>
-        <Link to='/form'><button>Crear receta</button></Link>
+        <a style={{ paddingLeft: '270px'}}>Filtros</a>
     </div>
   )
 }

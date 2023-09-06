@@ -28,9 +28,9 @@ export default function SearchBar() {
 
   return (
     <div className='searchbar'>
-        <input onChange={handleChange} onKeyDown={handlePressEnter} value={receta}></input>
-        <button onClick={handleClickSearch}>Buscar Receta</button>
-        <button onClick={handleClickBorrar}>Borrar busqueda</button>
+        <input onChange={handleChange} onKeyDown={handlePressEnter} value={receta} placeholder='Busqueda receta'></input>
+        <a onClick={handleClickSearch}>Buscar Receta</a>
+        <a onClick={handleClickBorrar}>Borrar busqueda</a>
     </div>
   )
 }
