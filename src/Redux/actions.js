@@ -4,11 +4,15 @@ import axios from 'axios'
 export function getRecipes(){
     var link1 = '/recipes'
     return async (dispatch) =>{
+        try{
         const data = (await axios.get(link1)).data
         dispatch({
             type: 'GET_RECIPES',
             payload: data
         })  
+        }catch(error){
+            alert("se han agotado los request al api, intente mañana nuevamente")
+        }
     }
 }
 
@@ -16,11 +20,13 @@ export function getRecipes(){
 export function getDiets(){
     var link2 = '/diets'
     return async (dispatch) =>{
+        try{
         const data = (await axios.get(link2)).data
         dispatch({
             type: 'GET_DIETS',
             payload: data
-        })  
+        }) 
+    }catch(err){} 
     }
 }
 
@@ -97,9 +103,16 @@ export function irPage(pagina){
 export function searchRecipe(name){
     return async (dispatch) =>{
         const data = (await axios.get(`/recipes?name=${name}`)).data
+        
         dispatch({
             type: 'SEARCH_RECIPE',
             payload: data
         })  
+    }
+}
+export function cargar(){
+    return{
+        type: 'CARGAR',
+        payload: true
     }
 }

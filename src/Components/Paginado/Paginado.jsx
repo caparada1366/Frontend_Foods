@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { nextPage, prevPage, irPage } from '../../Redux/actions';
+import { nextPage, prevPage, irPage, cargar } from '../../Redux/actions';
 import './Paginado.css'
 
 export default function Paginado({cantPages}) {
@@ -8,16 +8,18 @@ export default function Paginado({cantPages}) {
     const dispatch = useDispatch();
 
     function nextP(){
+        dispatch(cargar());
         dispatch(nextPage());
     }
 
     function prevP(){
+      dispatch(cargar());
         dispatch(prevPage());
     }
 
     function irPag(p){
+      dispatch(cargar());
       dispatch(irPage(p))
-      
     }
 
   return (

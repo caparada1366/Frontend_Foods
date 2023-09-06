@@ -31,3 +31,7 @@
    align-self: center;
    width: 100vw;
  }
+
+ .loading{
+   justify-self: center;
+ }

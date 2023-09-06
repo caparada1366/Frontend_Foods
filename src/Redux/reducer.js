@@ -6,7 +6,8 @@ const initialState ={
     recipesDefault: [],
     diets: [],
     recipesBuscadas: [],
-    pagActual: 1
+    pagActual: 1,
+    loadingHome: true,
 
 }
 
@@ -17,7 +18,8 @@ export default function rootReducer(state = initialState, {type, payload}){
                 ...state,
                 recipes: payload,
                 recipesAux: payload,
-                recipesDefault: payload
+                recipesDefault: payload,
+                loadingHome: false
             }
         case 'GET_DIETS':
             return{
@@ -121,26 +123,43 @@ export default function rootReducer(state = initialState, {type, payload}){
         case 'PREV_PAGE':
             return {
                 ...state,
-                pagActual: state.pagActual-1
+                pagActual: state.pagActual-1,
+                loadingHome: false
             }
         case 'NEXT_PAGE':
             return {
                 ...state,
-                pagActual: state.pagActual+1
+                pagActual: state.pagActual+1,
+                loadingHome: false
             }
         case 'IR_PAGE':
             return {
                 ...state,
-                pagActual: payload
+                pagActual: payload,
+                loadingHome: false
             }    
         case 'SEARCH_RECIPE':
-            return {
-                ...state,
-                recipes: payload,
-                recipesAux: payload,
-                recipesBuscadas: payload,
-                pagActual: 1
+            if(payload.length === 0){
+                alert('No hay resultados para está busqueda');
+                return{
+                    ...state,
+                    loadingHome: false
+                }
+            }else {
+                return {
+                    ...state,
+                    recipes: payload,
+                    recipesAux: payload,
+                    recipesBuscadas: payload,
+                    pagActual: 1,
+                    loadingHome: false
+                }
             }
+            case 'CARGAR':
+                return {
+                    ...state,
+                    loadingHome: payload
+                }
          default: 
          return state;   
     }

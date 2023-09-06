@@ -13,17 +13,16 @@ function App() {
   const location = useLocation();
   const navigate = useNavigate();
   const dispatch = useDispatch();
-
   
   useEffect(()=>{
     dispatch(getRecipes())
     dispatch(getDiets());
-  },[])
-
-  
+  },[dispatch])
+    
   function onClick(){
     navigate('/home')
   }
+  
 
   return (
     <div className="App">
